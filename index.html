@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Accordian jquery</h1>
+    <div class="accordion-title"  id="title1">What is an accordian in web design?</div>
+    <div class="accordion-content"  id="ans1">An accordion in web design is a UI component that allows content to be expanded and collapsed</div>
+    
+    <div class="accordion-title" id="title2">What are the common uses of accordian?</div>
+    <div class="accordion-content" id="ans2">FAQs,Menus and Navigation,Content Sections,Product Information etc</div>
+    
+    <div class="accordion-title" id="title3">What's important in  accordian design?</div>
+    <div class="accordion-content" id="ans3">In accordion design, clarity and responsiveness are key. Use visual cues like arrows to indicate expandability, ensure smooth transitions</div>
+    
+    
+    
+    <script>
+       $(document).ready(()=>{
+        $("#ans1,#ans2,#ans3").hide()
+
+        $("#title1").click(function(){
+                $("#ans1").slideToggle(1000)
+            })
+
+        $("#title2").click(function(){
+                $("#ans2").slideToggle(1000)
+            })
+
+        $("#title3").click(function(){
+                $("#ans3").slideToggle(1000)
+            })
+       })
+    </script>
+</body>
+</html>
